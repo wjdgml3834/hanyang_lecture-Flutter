@@ -15,7 +15,14 @@ void main() {
   );
 }
 
-class DicePage extends StatelessWidget {
+class DicePage extends StatefulWidget {
+  const DicePage({Key? key}) : super(key: key);
+
+  @override
+  State<DicePage> createState() => _DicePageState();
+}
+
+class _DicePageState extends State<DicePage> {
   @override
   Widget build(BuildContext context) {
     var leftDiceNumber =4;
@@ -44,3 +51,5 @@ class DicePage extends StatelessWidget {
     );
   }
 }
+
+
